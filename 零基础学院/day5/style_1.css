@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding :0;
+}
+body{
+    font-family:arial ;
+    font-size: 14px;
+}
+h2{
+    margin: 10px 0;
+}
+
+.outer{
+    width: 30%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #000000;
+}
+.base{
+    overflow:hidden ;
+}
+.base1,.base2,.base3{
+    float: left;
+    margin-right: 40px;
+ }
+/*.base1 span,.base2 span,.base3 span，.link1 span,.link2 span,.link3 span{*/
+    /*margin-right: 2px;*/
+/*}*/
+.link{
+    overflow:hidden ;
+}
+.link1,.link2,.link3{
+    float: left;
+    margin-right: 40px;
+}
+.ma_bot{
+margin-bottom: 10px;
+}

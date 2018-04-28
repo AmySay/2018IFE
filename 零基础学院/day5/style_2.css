@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding :0;
+}
+body{
+    font-family:arial ;
+    font-size: 14px;
+}
+h2{
+    margin: 10px 0;
+}
+
+.outer{
+    width:600px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px;
+}
+.head{
+    width: 25%;
+    height:550px;
+    background-color: cornflowerblue;
+    display: inline-block;
+}
+.main{
+    float: right;
+    margin-right: 40px;
+}
+h1{
+margin: 25% 30%;
+    color: #ffffff;
+
+}
+.base{
+    overflow:hidden ;
+}
+.base1,.base2,.base3{
+    float: left;
+    margin-right: 40px;
+}
+/*.base1 span,.base2 span,.base3 span，.link1 span,.link2 span,.link3 span{*/
+/*margin-right: 2px;*/
+/*}*/
+.link{
+    overflow:hidden ;
+}
+.link1,.link2,.link3{
+    float: left;
+    margin-right: 40px;
+}
+.ma_bot{
+    margin-bottom: 10px;
+}
+
+
