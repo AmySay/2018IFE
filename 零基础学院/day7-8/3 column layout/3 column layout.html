@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="3col_style_2.css">
+</head>
+<body>
+    <button id="btn1">3col_style_1.css</button>
+    <button id="btn2">3col_style_2.css</button>
+    <div class="main">
+        <div class="left">左边</div>
+        <div class="right">右边</div>
+        <div class="center">中间</div>
+    </div>
+</body>
+<script src="../../../jq/jq.js"></script>
+<script>
+    $(function(){
+        $("#btn1").on("click",function () {
+            $("link").attr("href","3col_style_1.css")
+        });
+        $("#btn2").on("click",function () {
+            $("link").attr("href","3col_style_2.css")
+        });
+    })
+
+
+
+
+
+
+
+</script>
+</html>

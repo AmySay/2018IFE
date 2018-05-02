@@ -1,0 +1,18 @@
+.main{
+    width: 600px;
+    height:300px;
+    border:1px solid #cccccc;
+    background-color: #cccccc;
+    overflow: hidden;
+}
+.left{
+    width:30%;
+    height:100%;
+    background-color: yellow;
+    float: left;
+    margin-right: 10px;
+}
+.right{
+    height:100%;
+    background-color: greenyellow;
+}
