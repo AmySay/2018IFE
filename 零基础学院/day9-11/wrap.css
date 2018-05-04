@@ -1,0 +1,460 @@
+    *{
+        margin:0;
+        padding: 0;
+    }
+    body,html{
+        font-family: "Malgun Gothic Semilight";
+    }
+    .wrap{
+        width: 1640px;
+        height:100%;
+
+    }
+    .main{
+        width: 1600px;
+        height:100%;
+        margin: 0 auto;
+    }
+    .header{
+        width:100%;
+        height:990px;
+        background: url("./img/head1.png") no-repeat;
+        background-position: 100% 100%;
+        position: relative;
+    }
+        .opt_background{
+            width:100%;
+            height:990px;
+            background-color: rgba(0, 0 ,0 ,.5);
+            position: absolute;
+            top:0;
+            left:0;
+        }
+        h1,.opt_background p,.information .title2,.details,.frame2 p,.bag_hover .p1,.bag_hover .p2{
+            color: #ffffff;
+        }
+        .part4 .bird,.part4 .tree,.part5 .title2 {
+            color: #000;
+        }
+        h1{
+            font-family:微软雅黑;
+            font-size: 62px;
+            color: #ffffff;
+            text-align: center;
+            margin: 208px 0 86px 0;
+        }
+        .title2{
+            font-size: 42px;
+        }
+        .opt_background .p1,.opt_background .p2{
+            font-family: "Malgun Gothic Semilight";
+            font-size: 12px;
+            text-align: center;
+        }
+        .opt_background .p1{
+            color: rgba(255,255,255,.5);
+            width:766px;
+            height: 84px;
+            margin-left: 420px;
+        }
+        .opt_background .p2{
+            color: rgb(255,255,255);
+            margin:61px 0 ;
+        }
+        .input{
+            width:970px;
+            height:250px;
+            border: 1px solid rgba(255,255,255,.5);
+            border-radius: 3px;
+            margin: 80px auto 0;
+            position: relative;
+
+        }
+        .doubleInput{
+            display: flex;
+            margin-left: 100px;
+        }
+        .input .text,.input .password{
+            width:100%;
+            height: 100%;
+            background-color:rgba(255,255,255,0) ;
+            border: 0;
+            /*被定位元素尺寸和父级元素相同，不用定位也可以达到相同效果（不浮动）*/
+            /*position: absolute;*/
+            /*top:50%;*/
+            /*left:50%;*/
+            /*transform: translate(-50%,-50%);*/
+        }
+        .input li{
+            width:292px ;
+            height:50px;
+            border:1px solid rgba(255,255,255,.5);
+            display: inline-block;
+            /*position: relative;*/
+            margin-right: 30px;
+        }
+        .input .submit{
+            width:125px;
+            height:50px;
+            background-color: #ffffff;
+        }
+        .submit span{
+        color: #000000;
+        display: block;
+        text-align: center;
+        margin-top: 13px;
+    }
+   .part1{
+       padding:0 316px ;
+       margin:76px 0;
+   }
+        .part1 .title,.part1 .title2{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .part1 span{
+            display: inline-block;
+            margin-bottom: 10px;
+            font-size:14px ;
+            font-weight: 600;
+        }
+        .pageSection p{
+            color: rgba(0, 0 ,0 ,.5);
+        }
+        .phone,.check,.pencil,.setting{
+            width: 415px;
+            height:85px;
+            margin-right: 179px;
+       }
+        .phone,.check,.pencil,.setting{
+            display: flex;
+            align-items: flex-start;
+        }
+        .pageSection img{
+            display: inline-block;
+            margin-right:20px ;
+        }
+        .pageSection {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+        .column {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+    .part2{
+        background: url("img/p2_1.png")no-repeat;
+        width:100%;
+        height:800px;
+        background-position: 100% 100%;
+        position: relative;
+
+    }
+        .opt_background_1{
+            width:100%;
+            height:800px;
+            background-color: rgba(0, 0 ,0 ,.5);
+            position: absolute;
+            top:0;
+            left:0;
+            overflow: hidden;
+        }
+        .information{
+            float: left;
+            margin-left: 316px;
+        }
+        .information .title2{
+            width: 366px;
+            margin: 182px 0 47px 0;
+
+        }
+        .details{
+            width: 366px;
+            margin-bottom: 58px;
+            color:rgba(255,255,255,.5)
+        }
+        .frame1{
+             width: 240px;
+             height:60px;
+             background-color: #ffffff;
+             display: inline-block;
+             margin-right: 30px;
+             float: left;
+         }
+        .frame1 p,.frame2 p{
+            text-align: center;
+            margin-top: 15px;
+        }
+        .frame2{
+            width: 240px;
+            height:60px;
+            border:1px solid rgba(255,255,255,.5);
+            display: inline-block;
+        }
+        .picture{
+            width: 645px;
+            height:600px;
+            border-radius: 20px;
+            border: 1px solid #cccccc;
+            margin: 103px 0 103px 967px;
+            position: relative;
+        }
+        .picture img{
+            width: 585px;
+            height:542px;
+            position: absolute;
+            top:50%;
+            left:100%;
+            transform: translate(-100%,-50%);
+        }
+    .part3{
+        border-bottom: 2px solid #cccccc;
+         padding: 0 316px;
+        margin-top: 100px;
+    }
+        .part3 .title2{
+            text-align: center;
+            margin-bottom: 100px;
+        }
+        .part3 ul{
+            overflow: hidden;
+            margin-bottom:100px;
+        }
+        .part3 li{
+            width:265px;
+            float: left;
+            margin-right: 57px;
+        }
+        .part3 .right{
+            float: right;
+        }
+        .part3 img{
+            margin: 0 0 20px 40px;
+        }
+    .part4{
+        padding: 0 316px;
+        margin: 114px 0;
+        }
+        .part4 p{
+            width: 305px;
+            font-size: 16px;
+            color: rgba(0,0,0,.5);
+        }
+        .part4 .bird,.part4 .tree{
+            width: 305px;
+            font-size: 20px;
+            margin-bottom: 35px;
+            font-weight: 600;
+            color: #000000;
+        }
+        .part4_top{
+            overflow: hidden;
+        }
+        .part4_top img{
+            float: left;
+        }
+        .pa4_article1{
+            margin-left: 670px;
+        }
+        .part4_bot img{
+            float: right;
+        }
+        .part4_bot{
+        margin-top: 80px;
+        overflow: hidden;
+    }
+    .part5{
+        margin-bottom:100px;
+        overflow: hidden;
+        border-top: 2px solid #cccccc;
+        padding: 0 316px;
+    }
+        .part5 .title2{
+            margin-top: 100px;
+        }
+        .part5 p{
+            text-align: center;
+            margin-bottom: 40px;
+            color: rgba(0,0,0,.5);
+        }
+        .img1,.img2,.img3,.img4{
+             width:470px;
+             height:350px;
+             background-position: 100% 100%;
+             position: relative;
+         }
+        .img1{
+            background: url("./img/name1.png") no-repeat;
+        }
+        .img2{
+            background: url("./img/name2.png") no-repeat;
+        }
+        .img3{
+            background: url("./img/name3.png") no-repeat;
+        }
+        .img4{
+            background: url("./img/name4.png") no-repeat;
+        }
+        .img1:hover .bag_hover,.img2:hover .bag_hover,.img3:hover .bag_hover,.img4:hover .bag_hover{
+            display: block;
+        }
+        .bag_hover{
+            width:470px;
+            height:350px;
+            position: absolute;
+            top:0;
+            left:0;
+            background-color: rgba(0,0,0,.5);
+        }
+        .bag_hover .p1{
+            font-size: 20px;
+            margin-top: 133px;
+        }
+        .bag_hover .p2{
+            font-size: 12px;
+        }
+        .bag_hover .p1,.bag_hover .p2{
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        ul{
+            list-style: none;
+        }
+        .bag_hover ul{
+            margin-left: 128px;
+        }
+        .bag_hover li{
+            float: left;
+            margin-right: 30px;
+        }
+        .bag_hover{
+            display:none;
+        }
+        .img1,.img3{
+            float:left;
+        }
+        .img2,.img4{
+            margin-left: 490px;
+        }
+        .photo_top,.photo_bottom{
+             overflow: hidden;
+            margin-bottom: 10px;
+    }
+    .part6 {
+        border-top: 2px solid #cccccc;
+        padding: 0 315px;
+        overflow: hidden;
+        margin-bottom: 70px;
+    }
+        .part6_left{
+            width: 470px;
+            height:560px;
+            border: 1px solid #cccccc;
+            float: left;
+            margin-top: 76px;
+        }
+        .part6_left p{
+            text-align: center;
+            margin: 50px 0;
+        }
+        .pa6_left_mail,.pa6_left_password,.pa6_left_message,.pa6_left_submit,textarea{
+            width:370px;
+            height:50px;
+            border: 1px solid #cccccc;
+           position: relative;
+            margin:0 auto 30px;
+        }
+        .part6 input,.part6 textarea{
+            border:0;
+            /*被定位元素尺寸和父级元素相同，不用定位也可以达到相同效果（不浮动）*/
+            /*position: absolute;*/
+            /*top: 50%;*/
+            /*left:50%;*/
+            /*transform: translate(-50%,-50%);*/
+        }
+        .part6 input{
+            width:100%;
+            height:100%;
+        }
+        .pa6_left_message,textarea{
+            height:144px;
+        }
+        .pa6_left_submit{
+            background-color: #000000;
+            color: #ffffff;
+        }
+        .pa6_left_submit p{
+            color: #ffffff;
+            text-align: center;
+            margin-top: 12px;
+        }
+        .part6_right{
+            margin: 198px 0 0 570px;
+            line-height: 20px;
+        }
+        .part6_right p{
+            margin-bottom: 20px;
+        }
+        .Map,.move_Phone,.Mail{
+        display: flex;
+        align-items:flex-start;
+        margin-top: 30px;
+    }
+    .footer{
+        width:100%;
+        height:410px;
+        background-color: #000000;
+        color:#ffffff;
+        line-height: 30px;
+    }
+        .footer_title{
+            font-size: 14px;
+        }
+        .half_opt,.footer img{
+            font-size: 16px;
+            color:rgba(255,255,255,.5);
+        }
+        .footer ul{
+            margin-left:215px ;
+            overflow: hidden;
+        }
+        .footer li{
+            width:200px;
+            float: left;
+            margin-right:140px;
+            margin-top: 88px;
+        }
+        .FacebookIcon,.GoogleIcon, .LinkedInIcon,.TumblerIcon, .TwitterIcon{
+        position: relative;
+        height:20px;
+        width: 20px;
+        display: inline-block;
+        margin-right: 15px;
+        margin-top: 30px;
+    }
+        .FacebookIcon{
+            background: url("img/Facebook Icon.png")no-repeat;
+        }
+        .GoogleIcon{
+            background: url("img/Google Icon.png")no-repeat;
+        }
+        .LinkedInIcon{
+            background: url("img/LinkedIn Icon.png")no-repeat;
+        }
+        .TumblerIcon{
+            background: url("img/Tumbler Icon.png")no-repeat;
+        }
+        .TwitterIcon{
+            background: url("img/Twitter Icon.png")no-repeat;
+        }
+        .footer_bagr{
+            width:20px;
+            height:20px;
+            background-color: rgba(0,0,0,.5);
+            position: absolute;
+            top:0;
+            left:0;
+        }
