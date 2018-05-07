@@ -84,7 +84,10 @@ body,html{
 .bottom_positions  .setting1{
     background: url("img/Settings.png") no-repeat;
 }
-
+.nav_bar_content ul{
+    height:725px;
+    overflow: auto;
+}
 .nav_bar_content li {
     color: #ffffff;
     width: 191px;
@@ -226,12 +229,14 @@ li .psit{
     margin-left: 30px;
 }
 .content .left{
+    height:calc(100% - 81px);
     float: left;
     width: 400px;
     border-right: 1px solid #cccccc;
 }
 .content .right{
     margin-left: 400px;
+    height:calc(100% - 81px);
 }
 .box{
     width:100%;
@@ -256,9 +261,16 @@ li .psit{
     left:350px;
     transform:translateY(-50%);
 }
+.left .left_secton{
+    height:calc(100% - 81px);
+    overflow: auto;
+}
+.left .left_secton::-webkit-scrollbar {
+    display:none
+}
 .left li{
     margin: 15px 23px;
-    border-bottom: 2px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
 }
 .face_name{
     overflow: hidden;
@@ -266,8 +278,8 @@ li .psit{
     margin-bottom: 20px;
 }
 .face_name .face{
-      width: 64px;
-      height:64px;
+      width: 46px;
+      height:46px;
       float: left;
       display: inline-block;
 
@@ -280,6 +292,7 @@ li .psit{
     transform: translateY(-50%);
     margin-bottom: 20px;
 }
+
 .face_name .name .name_title1 span{
     display: inline-block;
     width: 8px;
@@ -388,7 +401,12 @@ li .psit{
     transform: translate(-50%,-50%);
 }
 .massage{
+    height:calc(100% - 118px);
+    overflow: auto;
     margin:15px 50px 20px 30px;
+}
+.massage::-webkit-scrollbar {
+    display:none
 }
 .boder1 ,.boder2{
     width: 100%;
