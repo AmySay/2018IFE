@@ -62,30 +62,29 @@
                 </ul>
             </div>
             <div class="foot"></div>
-
         </div>
     </div>
-<script src="../../jq/jq.js"></script>
+<!--<script src="../../jq/jq.js"></script>-->
 <script>
-    $(".flower1").on("click" ,function () {
-        $(".main .hi").css({
-            display:"block"
-        })
-    });
-    $(".flower2").on("click" ,function () {
-        $(".bottom").css({
-            background:"url('img7.png')",
-            backgroundSize:"800px,954px"
-        })
-    });
-
-
-//    document.getElementById("circle").onclick=function () {
-//        document.getElementById("bottom").css({
-//            background:url("background.jpg"),
-//
+//    $(".flower1").on("click" ,function () {
+//        $(".main .hi").css({
+//            display:"block"
 //        })
-//    }
+//    });
+//    $(".flower2").on("click" ,function () {
+//        $(".bottom").css({
+//            background:"url('img7.png')",
+//            backgroundSize:"800px,954px"
+//        })
+//    });
+
+    document.getElementsByClassName("flower1")[0].onclick=function () {
+        document.querySelectorAll(".main .hi")[0].style.display = "block";
+    } ;
+
+    document.getElementsByClassName("flower2")[0].onclick = function () {
+        document.getElementsByClassName("bottom")[0].style.background = "url(img7.png)";
+    }
 </script>
 
 </body>
