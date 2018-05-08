@@ -6,15 +6,16 @@
         font-family: "Malgun Gothic Semilight";
     }
     .wrap{
-        width: 1640px;
         height:100%;
-
     }
     .main{
-        width: 1600px;
         height:100%;
+    }
+    .heart{
+        width: 1016px;
         margin: 0 auto;
     }
+
     .header{
         width:100%;
         height:990px;
@@ -53,9 +54,8 @@
         }
         .opt_background .p1{
             color: rgba(255,255,255,.5);
-            width:766px;
+            width:100%;
             height: 84px;
-            margin-left: 420px;
         }
         .opt_background .p2{
             color: rgb(255,255,255);
@@ -105,53 +105,40 @@
         margin-top: 13px;
     }
    .part1{
-       padding:0 316px ;
        margin:76px 0;
    }
         .part1 .title,.part1 .title2{
             text-align: center;
             margin-bottom: 40px;
         }
-        .part1 span{
-            display: inline-block;
+        .pageSection{
+            overflow: hidden;
+        }
+        .pageSection li{
+             width: 50%;
+             float: left;
+            overflow: hidden;
+            margin-bottom: 20px;
+         }
+        .pageSection li  img{
+            float: left;
+        }
+        .pageSection li .li_body{
+            margin-left:50px ;
+            color: rgba(0, 0 ,0 ,.5);
+        }
+        .pageSection  .page_title{
             margin-bottom: 10px;
             font-size:14px ;
             font-weight: 600;
+            color: #000000;
         }
-        .pageSection p{
-            color: rgba(0, 0 ,0 ,.5);
-        }
-        .phone,.check,.pencil,.setting{
-            width: 415px;
-            height:85px;
-            margin-right: 179px;
-       }
-        .phone,.check,.pencil,.setting{
-            display: flex;
-            align-items: flex-start;
-        }
-        .pageSection img{
-            display: inline-block;
-            margin-right:20px ;
-        }
-        .pageSection {
-            display: flex;
-            flex-wrap: wrap;
-            align-content: space-between;
-        }
-        .column {
-        flex-basis: 100%;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 80px;
-    }
     .part2{
         background: url("img/p2_1.png")no-repeat;
         width:100%;
         height:800px;
         background-position: 100% 100%;
         position: relative;
-
     }
         .opt_background_1{
             width:100%;
@@ -160,11 +147,6 @@
             position: absolute;
             top:0;
             left:0;
-            overflow: hidden;
-        }
-        .information{
-            float: left;
-            margin-left: 316px;
         }
         .information .title2{
             width: 366px;
@@ -197,22 +179,21 @@
         .picture{
             width: 645px;
             height:600px;
-            border-radius: 20px;
+            border-radius: 20px 0 0 20px;
             border: 1px solid #cccccc;
-            margin: 103px 0 103px 967px;
-            position: relative;
+            position: absolute;
+            right:0;
+            top:103px;
         }
         .picture img{
             width: 585px;
             height:542px;
             position: absolute;
-            top:50%;
-            left:100%;
-            transform: translate(-100%,-50%);
+            top:30px;
+            right:0;
         }
     .part3{
         border-bottom: 2px solid #cccccc;
-         padding: 0 316px;
         margin-top: 100px;
     }
         .part3 .title2{
@@ -226,16 +207,15 @@
         .part3 li{
             width:265px;
             float: left;
-            margin-right: 57px;
+            margin-right: 110px;
         }
-        .part3 .right{
-            float: right;
+        li:nth-of-type(3){
+            margin-right: 0;
         }
         .part3 img{
             margin: 0 0 20px 40px;
         }
     .part4{
-        padding: 0 316px;
         margin: 114px 0;
         }
         .part4 p{
@@ -270,7 +250,6 @@
         margin-bottom:100px;
         overflow: hidden;
         border-top: 2px solid #cccccc;
-        padding: 0 316px;
     }
         .part5 .title2{
             margin-top: 100px;
@@ -282,7 +261,7 @@
         }
         .img1,.img2,.img3,.img4{
              width:470px;
-             height:350px;
+             height:340px;
              background-position: 100% 100%;
              position: relative;
          }
@@ -346,9 +325,11 @@
     .part6 {
         border-top: 2px solid #cccccc;
         padding: 0 315px;
-        overflow: hidden;
         margin-bottom: 70px;
     }
+        .part6 .overFlow{
+        overflow: hidden;
+        }
         .part6_left{
             width: 470px;
             height:560px;
@@ -418,7 +399,7 @@
             color:rgba(255,255,255,.5);
         }
         .footer ul{
-            margin-left:215px ;
+            margin-left:146px ;
             overflow: hidden;
         }
         .footer li{
