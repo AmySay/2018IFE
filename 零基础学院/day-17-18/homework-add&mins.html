@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>基于上一个任务中，关于加减乘除的任务，加上对于特殊情况的判断，比如判断两个输入框是否都是正常输入了数字类型的内容，比如除法的时候除数是否为0，当判断到输入有异常的时候，把错误信息提示到Console中</p>
+    <input id="first-number" type="number" value="0" placeholder="第一个数字">
+    <input id="second-number" type="number" value="0" placeholder="第二个数字">
+
+    <button id="add-btn">加</button>
+    <button id="minus-btn">减</button>
+    <button id="times-btn">乘</button>
+    <button id="divide-btn">除</button>
+
+    <p id="result">运算结果</p>
+<script>
+
+    let add=document.getElementById("add-btn"),
+        minus=document.getElementById("minus-btn"),
+        times=document.getElementById("times-btn"),
+        divide=document.getElementById("divide-btn");
+        function decide(a,b) {
+            if(a===""||b==="")  {
+                console.log("empty");
+                return ;
+            }else if(isNaN(a)||isNaN(b)){
+                console.log("不是数字");
+                return;
+            }
+        }
+        function divideFn(b) {
+            if(Number(b)===0){
+                console.log("分母为0");
+                return false;
+            }
+        }
+    add.onclick=function () {
+        let a=document.getElementById("first-number").value,
+            b=document.getElementById("second-number").value, y;
+            decide(a,b);
+            y=Number(a)+Number(b);
+        document.getElementById("result").innerHTML=y;
+    };
+    minus.onclick=function () {
+        let a=document.getElementById("first-number").value,
+            b=document.getElementById("second-number").value,y;
+            decide(a,b);
+           y=Number(a)-Number(b);
+        document.getElementById("result").innerHTML=y;
+    };
+    times.onclick=function () {
+        let a=document.getElementById("first-number").value,
+            b=document.getElementById("second-number").value,y;
+            decide(a,b);
+            y=Number(a)*Number(b);
+        document.getElementById("result").innerHTML=y;
+    };
+    divide.onclick=function () {
+        let a = document.getElementById("first-number").value,
+            b = document.getElementById("second-number").value,y;
+            divideFn(b);
+            if(divideFn(b)===false){
+                return;
+            }
+            y=Number(a)/Number(b);
+            document.getElementById("result").innerHTML=y;
+    }
+
+
+
+
+
+
+</script>
+</body>
+</html>
