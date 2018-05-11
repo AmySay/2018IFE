@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>点击按钮会根据当前时间打招呼</p>
+<button id="button">点我Say Hello!</button>
+<p class="hello"></p>
+</body>
+<script>
+//switch()case也可以
+    document.getElementById("button").onclick = function(){
+        let hoursTime=new Date().getHours();
+        let hellotime="";
+        if( hoursTime<=10){
+            hellotime="Hello Good Morning"
+        }else if( hoursTime<=20 ){
+            hellotime="Hello Good day"
+       }else{
+            hellotime="Hello Good evening"
+        }
+        document.getElementsByClassName("hello")[0].innerHTML=hellotime;
+    }
+
+
+
+
+
+</script>
+</html>

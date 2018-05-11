@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--一-->
+<!--<h1>Demo</h1>-->
+<!--<p id="content-wrapper">你是谁？</p>-->
+<!--<input id="name-input" type="text" placeholder="输入你的名字">-->
+<!--<button id="send-btn">发送</button>-->
+
+<!--二-->
+<!--<p>点击按钮创建变量并显示结果</p>-->
+<!--<button onclick="myfunction()">点击这里</button>-->
+<!--<p id="demo"></p>-->
+<!--三-->
+<!--<p>假设x=2，y=x+8，求y</p>-->
+<!--<p id="demo"></p>-->
+<!--<button onclick="sum()">点击看结果</button>-->
+
+
+<!--四-->
+<p>点对应加减乘除按钮的时候，将两个输入框中的数字做对应的算术，并将结果显示在id为result的p标签内。 </p>
+
+<input id="first-number" type="number" value="0" placeholder="第一个数字">
+<input id="second-number" type="number" value="0" placeholder="第二个数字">
+<button id="add-btn">加</button>
+<button id="minus-btn">减</button>
+<button id="times-btn">乘</button>
+<button id="divide-btn">除</button>
+<p id="result">运算结果</p>
+
+
+</body>
+<script src="../../jq/jq.js"></script>
+<script>
+    //    一。
+    //    document.getElementById("send-btn").onclick = function() {
+    //        document.getElementById("content-wrapper").innerHTML = 'Hello ' + document.getElementById("name-input").value;
+    //    };
+    //    二。
+    //    function myfunction() {
+    //        var content= "wwww";
+    //        document.getElementById("demo").innerHTML=content;
+    //    }
+    //三
+    //    function sum(){
+    //        var x=2,y=x+8;
+    //        document.getElementById("demo").innerHTML="y="+y;
+    //    }
+    //四
+    //    let i;
+    //    let cars=new Array();
+    //    cars[0]="10";
+    //    cars[1]="20";
+    //    cars[3]="30";
+    //
+    //    for(i=0;i<cars.length;i++){
+    //        document.write(cars[i]);
+    //    }
+    //    五
+    // var information={
+    //        name :"王慧敏",
+    //        age : 25,
+    //        sex :"女",
+    //    }
+    //    name=information.name;
+    //    age=information.age;
+    //    console.log(name);
+    //    console.log(age);
+
+
+    let addbton = document.getElementById("add-btn"),
+        minusbtn = document.getElementById("minus-btn"),
+        timesbtn = document.getElementById("times-btn"),
+        dividebtn = document.getElementById("divide-btn");
+
+    addbton.onclick = function () {
+        let
+            a = document.getElementById("first-number").value,
+            b = document.getElementById("second-number").value,
+            avalue = parseInt(a),
+            bvalue = parseInt(b);
+        document.getElementById("result").innerHTML = avalue + bvalue;
+    };
+    minusbtn.onclick = function () {
+        let
+            a = document.getElementById("first-number").value,
+            b = document.getElementById("second-number").value,
+            avalue = parseInt(a),
+            bvalue = parseInt(b);
+        document.getElementById("result").innerHTML = avalue - bvalue;
+    };
+    timesbtn.onclick = function () {
+        let
+            a = document.getElementById("first-number").value,
+            b = document.getElementById("second-number").value,
+            avalue = parseInt(a),
+            bvalue = parseInt(b);
+        document.getElementById("result").innerHTML = avalue * bvalue;
+    };
+    dividebtn.onclick = function () {
+        let
+            a = document.getElementById("first-number").value,
+            b = document.getElementById("second-number").value,
+            avalue = parseInt(a),
+            bvalue = parseInt(b);
+        document.getElementById("result").innerHTML = avalue / bvalue;
+    };
+
+
+</script>
+</html>
