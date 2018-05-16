@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    select {
+        display: none;
+    }
+</style>
+<body>
+<label>
+    <input id="school" name="status" type="radio">
+    School
+</label>
+<label>
+    <input id="company" name="status" type="radio">
+    Company
+</label>
+
+<select id="school-select">
+    <option>北京邮电大学</option>
+    <option>黑龙江大学</option>
+    <option>华中科技大学</option>
+</select>
+
+<select id="company-select">
+    <option>百度</option>
+    <option>爱奇艺</option>
+</select>
+
+<!--当用户选择了 School 的单选框时，显示 School 的下拉选项，隐藏 Company 的下拉选项-->
+<!--当用户选择了 School 的单选框时，显示 Company 的下拉选项，隐藏 School 的下拉选项-->
+<script>
+    window.onload = function () {
+       let  school = document.getElementById("school"),
+           company = document.getElementById("company"),
+        schselect =  document.getElementById("school-select"),
+        compselect = document.getElementById("company-select");
+
+        school.onclick = function () {
+            schselect.style.display = "block";
+            compselect.style.display = "none";
+        };
+        company.onclick = function () {
+            compselect.style.display = "block";
+            schselect.style.display = "none";
+        }
+
+
+
+
+    }
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input id="name" type="text">
+    <button id="submit-btn">Submit</button>
+
+
+<!--当点击按钮 submit-btn 时，在console中输出 name 中的内容-->
+<!--在输入过程中，如果按回车键，则同样执行上一条的需求-->
+<!--在输入过程中，如果按 ESC 键，则把输入框中的内容清空-->
+</body>
+<script>
+    window.onload = function () {
+
+        document.getElementById("submit-btn").onclick = function () {
+            let val=document.getElementById("name").value;
+            console.log(val);
+        };
+
+        document.onkeypress = function (event) {
+            event=window.event|| event;
+            if(event.keyCode===13){
+                let val=document.getElementById("name").value;
+                console.log(val);
+            }
+
+        };
+        window.onkeydown = function keydow(event) {
+            event=window.event || event;
+            if(event.keyCode===27){
+            document.getElementById("name").value=null;
+            }
+
+        }
+
+
+    }
+</script>
+</html>
