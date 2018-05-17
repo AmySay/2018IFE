@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style>
+   #smileface{
+       background: url("./img/erik.jpg") no-repeat;
+       background-size:480px 8160px;
+       overflow: hidden;
+       width: 480px;
+       height: 480px;
+   }
+
+</style>
+<body>
+<div id="box">
+    <div id="smileface"></div>
+</div>
+</body>
+<script>
+let smileface = document.querySelector("#smileface"),
+    positiony=0;
+    timer= setInterval(function () {
+        let uppositiony=(positiony--)*480;
+        smileface.style.backgroundPositionY = uppositiony + "px";
+    },100);
+    
+</script>
+</html>
