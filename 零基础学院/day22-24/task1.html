@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--任务一-->
+<div>
+    <label>Number A:<input id="radio-a" type="radio" name="math-obj" value="a"></label><input id="num-a" type="text"/>
+    <label>Number B:<input id="radio-b" type="radio" name="math-obj" value="b"></label><input id="num-b" type="text"/>
+</div>
+<div>
+    <button>判断当前选中的输入框输入内容是否为数字</button>
+    <button>把 A 四舍五入为 B 个小数位数的数字</button>
+    <button>当前选中数字的绝对值</button>
+    <button>对当前选中的数字进行上舍入</button>
+    <button>对当前选中的数字进行下舍入</button>
+    <button>把当前选中的数字四舍五入为最接近的整数</button>
+    <button>返回 A 和 B 中的最高值</button>
+    <button>返回 A 和 B 中的最低值</button>
+</div>
+<p id="result"></p>
+
+<script>
+    window.onload = function () {
+
+        let btntext = document.querySelector("button").textContent,
+            numa = document.getElementById("num-a"),
+            numb = document.getElementById("num-b"),
+            waitchecked=document.getElementsByName("math-obj");
+        function checked() {
+            if (waitchecked[0].checked === true) {
+                return numa.value;
+            } else {
+                return numb.value;
+            }
+        }
+        function isnan() {
+            checked()
+            if ( checked()==="") {
+                console.log("不是数字");
+                return false;
+            }else if(isNaN(checked()) === true){
+                console.log("不是数字");
+                return false;
+            } else {
+                return true;
+            }
+        }
+        document.getElementsByTagName("div")[1].onclick = function (e) {
+            let  res = document.getElementById("result"),
+                 Text = e.target.textContent;
+            if(isnan() === true){
+                if (Text === "判断当前选中的输入框输入内容是否为数字"){
+                    res.innerHTML = "是数字";
+                }
+                if (Text === "把 A 四舍五入为 B 个小数位数的数字") {
+                    if(numa.value!=="" && numb.value!==""){
+                        console.log(numa.value);
+                        res.innerHTML=Number(numa.value).toFixed(Number(numb.value));
+                    }  else{
+                        alert("输入框不能为空");
+                    }
+                }
+                if (Text === "当前选中数字的绝对值") {
+                    res.innerHTML =Math.abs(checked())
+                }
+                if (Text === "对当前选中的数字进行上舍入") {
+                    res.innerHTML =Math.ceil(checked());
+                }
+                if (Text === "对当前选中的数字进行下舍入") {
+                    res .innerHTML=Math.floor(checked());
+                }
+                if (Text === "把当前选中的数字四舍五入为最接近的整数") {
+                    res.innerHTML =Math.round(checked());
+                }
+                if (Text === "返回 A 和 B 中的最高值") {
+                    if(numa.value!=="" && numb.value!==""){
+                        res.innerHTML=Math.max(numa.value,numb.value);
+                    }  else{
+                        alert("输入框不能为空");
+                    }
+                }
+                if (Text === "返回 A 和 B 中的最低值") {
+                    if(numa.value!=="" && numb.value!=="") {
+                        res.innerHTML =Math.min(numa.value,numb.value);
+                    }  else{
+                        alert("输入框不能为空");
+                    }
+                }
+            }else{
+                console.log("不是数字");
+                }
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
