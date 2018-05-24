@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="Time1"></p>
+<p id="Time2"></p>
+</body>
+<script>
+    let Time1 = document.getElementById("Time1");
+    let Time2 = document.getElementById("Time2");
+//    格式为 YYYY 年 MM 月 DD 日 星期 D HH:mm:ss
+//    输出格式变为：2008-10-10 Monday 07:10:30 PM
+    function getWeekday(Enghlish,chinese) {
+        let weekDays;
+        if(Enghlish){
+            weekDays = ["Sunday","Monday","Tuesday","Wednesday", "Thursday","Friday", "Saturday"];
+        }else{
+            weekDays = ["星期日","星期一","星期二","星期三", "星期三","星期四", "星期五","星期六"];
+        }
+        return weekDays[new Date().getDay()];
+    }
+    function checkTime(i) {
+        if (i<10) {
+            i = "0" + i;
+        }
+        return i;
+    }
+    function  showTime() {
+        let date = new Date(),
+            year = date.getFullYear(),
+            month = date.getMonth()+1,
+            day = date.getDate(),
+            hours = date.getHours(),
+            minutes = date.getMinutes(),
+            second = date.getSeconds(),
+            halfDay;
+        setTimeout(showTime,50);
+        if(hours<12){
+            halfDay="AM"
+        }else{
+            halfDay="PM"
+        }
+    return Time1.innerHTML = year + "-" + checkTime(month) + "-" +checkTime(day) +"&nbsp;"+getWeekday(true)+"&nbsp;" + checkTime(hours) + ":" + checkTime(minutes) + ":" +checkTime(second) +"&nbsp;"+halfDay,
+          Time2.innerHTML = year +"&nbsp;"+ "年"+"&nbsp;" + checkTime(month) +"&nbsp;"+ "月" + checkTime(day)+"&nbsp;" +getWeekday(false) +"&nbsp;"+ checkTime(hours) + ":" + checkTime(minutes) + ":"+checkTime(second) ;
+    }
+    showTime()
+
+
+
+</script>
+
+</html>
